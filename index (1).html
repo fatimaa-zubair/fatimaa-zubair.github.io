@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fatima Zubair | Email &amp; Social Media Marketer</title>
+<meta name="description" content="Fatima Zubair writes and runs email campaigns and manages social media for small brands.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#222222;--mid:#7B7B7B;--soft:#F8F8F8;--white:#FFFFFF;--line:#E4E4E4;--r:16px;--font:"Inter Tight","Helvetica Neue",Arial,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--font);color:var(--ink);background:var(--soft);line-height:1.6;font-weight:400}
+a{color:inherit;text-decoration:none}
+a:focus-visible,summary:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+section{padding:88px 0}
+h1,h2,h3{font-weight:300;letter-spacing:-.03em;line-height:1.05}
+h2{font-size:clamp(34px,5vw,56px);margin-bottom:40px}
+p{color:var(--mid);font-size:15px;max-width:60ch}
+.pill{display:inline-block;background:var(--white);border:1px solid var(--line);border-radius:99px;padding:2px 12px;font-size:12px;color:var(--mid);margin:2px 4px 2px 0}
+.ph{border-radius:var(--r);background:linear-gradient(135deg,#d9cfc1,#bfb3a3 55%,#e9e3da)} /* PLACEHOLDER: swap for a real image */
+/* nav */
+nav{position:sticky;top:0;z-index:10;background:rgba(248,248,248,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-weight:500;font-size:18px;letter-spacing:-.02em}
+.links{display:flex;gap:28px;font-size:14px}
+.links a:hover,.call:hover{color:var(--mid)}
+.call{font-size:14px;border-bottom:1px solid var(--ink)}
+/* hero */
+.hero{padding:56px 0 72px}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:end}
+.hero h1{font-size:clamp(88px,17vw,220px);letter-spacing:-.06em;line-height:.9;animation:rise .9s ease both}
+@keyframes rise{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+.hero .sub{margin:28px 0 36px;font-size:18px;color:var(--ink);max-width:30ch;line-height:1.4}
+.stats{display:flex;gap:40px;flex-wrap:wrap}
+.stats b{display:block;font-size:30px;font-weight:300;letter-spacing:-.03em}
+.stats span{font-size:12px;color:var(--mid);display:block;max-width:20ch}
+.portrait{aspect-ratio:4/5;width:100%;object-fit:cover;object-position:center top;filter:grayscale(1);border-radius:var(--r);display:block} /* remove the filter line for a colour photo */
+.role{font-size:12px;color:var(--mid);margin-bottom:12px}
+/* about */
+.about .grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.about p+p{margin-top:16px}
+.about ul{list-style:none;margin-top:24px}
+.about li{display:flex;gap:12px;font-size:15px;color:var(--mid);margin-bottom:12px}
+.about li::before{content:"";flex:none;width:10px;height:10px;border-radius:50%;background:var(--ink);margin-top:8px}
+.imgbox{position:relative;aspect-ratio:5/4}
+.imgbox img{width:100%;height:100%;object-fit:cover;border-radius:var(--r);display:block}
+.card{position:absolute;right:20px;top:20px;background:var(--white);border-radius:14px;padding:18px 20px;width:200px;box-shadow:0 1px 2px rgba(0,0,0,.06)}
+.card b{font-size:26px;font-weight:300;letter-spacing:-.03em;display:block}
+.card span{font-size:12px;color:var(--mid)}
+/* work */
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:40px 24px}
+.work{display:block}
+.work .ph{aspect-ratio:4/3;position:relative;overflow:hidden}
+.work .ph img{width:100%;height:100%;object-fit:cover;display:block}
+.work .go{position:absolute;inset:0;margin:auto;width:54px;height:54px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;font-size:20px;opacity:0;transform:scale(.8);transition:.25s}
+.work:hover .go,.work:focus-visible .go{opacity:1;transform:none}
+.work h3{font-size:22px;margin:16px 0 6px;letter-spacing:-.02em}
+.work p{font-size:14px;margin-bottom:8px}
+.more{margin-top:32px;font-size:14px;color:var(--mid)}
+/* moum */
+.moum-head{display:flex;gap:32px;align-items:center;margin-bottom:40px}
+.moum-head img{width:140px;height:140px;border-radius:var(--r);flex:none}
+.moum-head h2{margin-bottom:12px}
+.gallery{columns:3;column-gap:16px}
+.gallery img{width:100%;display:block;border-radius:12px;margin-bottom:16px}
+.note{font-size:13px;margin-top:8px}
+.gallery.two{columns:2}
+.gallery.two img{border:1px solid var(--line)}
+.work .ph.logo-tile{background:var(--white);border:1px solid var(--line);display:grid;place-items:center}
+.work .ph.logo-tile img{width:100%;height:100%;object-fit:contain;padding:10%}
+.pair{display:grid;grid-template-columns:minmax(0,360px) 1fr;gap:40px;align-items:start;margin-top:48px}
+.pair img{width:100%;border-radius:12px;border:1px solid var(--line);display:block}
+.pair h3{font-size:22px;margin-bottom:8px;letter-spacing:-.02em}
+#jewel-haven{padding-top:0}
+/* services + experience rows */
+.row{display:grid;grid-template-columns:1fr 1.2fr auto;gap:24px;padding:24px 0;border-top:1px solid var(--line);align-items:start}
+.rows{border-bottom:1px solid var(--line)}
+.row h3{font-size:22px;letter-spacing:-.02em}
+.row p{font-size:14px}
+details{border-top:1px solid var(--line)}
+details:last-child{border-bottom:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:1fr 1.2fr auto;gap:24px;padding:24px 0;align-items:start}
+summary::-webkit-details-marker{display:none}
+summary h3{font-size:22px;letter-spacing:-.02em}
+summary small{display:block;font-size:13px;color:var(--mid);margin-top:4px}
+summary p{font-size:14px}
+details ul{padding:0 0 24px 0;margin-left:calc(33% + 8px);color:var(--mid);font-size:14px;max-width:60ch}
+details li{margin-bottom:6px}
+details[open] summary h3{color:var(--mid)}
+details img{max-width:380px;width:100%;border-radius:12px;margin:0 0 24px calc(33% + 8px);display:block}
+/* skills */
+.three{display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
+.three h3{font-size:22px;margin-bottom:14px}
+.three p{font-size:14px;margin-bottom:8px}
+/* cta */
+.cta{background:var(--ink);color:#fff;border-radius:24px;padding:80px 24px;text-align:center}
+.cta h2{margin:12px 0 16px}
+.cta p{color:#bdbdbd;margin:0 auto 32px}
+.btn{display:inline-block;background:#fff;color:var(--ink);padding:12px 28px;border-radius:99px;font-size:14px;transition:.2s}
+.btn:hover{background:#e8e8e8}
+footer{padding:48px 0 56px;font-size:14px;color:var(--mid)}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px}
+footer a:hover{color:var(--ink)}
+@media (max-width:820px){
+ .links{display:none}
+ section{padding:64px 0}
+ .hero .wrap,.about .grid,.cards,.three{grid-template-columns:1fr}
+ .portrait{aspect-ratio:1}
+ .gallery{columns:2}
+ .gallery.two{columns:1}
+ .pair{grid-template-columns:1fr;gap:20px}
+ .moum-head{flex-direction:column;align-items:flex-start}
+ details img{margin-left:0}
+ .row,summary{grid-template-columns:1fr;gap:8px}
+ details ul{margin-left:0}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<nav>
+ <div class="wrap">
+  <a class="logo" href="#top" aria-label="Fatima Zubair, home">FZ</a>
+  <div class="links">
+   <a href="#about">About</a><a href="#work">Work</a><a href="#services">Services</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+  </div>
+  <a class="call" href="mailto:faatimazubair@outlook.com">Book a call ↗</a>
+ </div>
+</nav>
+
+<main id="top">
+<header class="hero">
+ <div class="wrap">
+  <div>
+   <p class="role">Email &amp; social media marketer</p>
+   <h1>Hello</h1>
+   <p class="sub">I’m Fatima. I write and run email campaigns and manage social for small brands.</p>
+   <div class="stats">
+    <div><b>500 → 6,000</b><span>Instagram followers in one month, Workshack.co</span></div>
+    <div><b>1.6K views</b><span>On Readloompk’s Instagram in 30 days, with 96 interactions</span></div>
+   </div>
+  </div>
+  <img class="portrait" src="images/photo.jpg" alt="Portrait of Fatima Zubair">
+ </div>
+</header>
+
+<section id="about" class="about">
+ <div class="wrap grid">
+  <div class="imgbox">
+   <img src="images/moum-fall-2.jpg" alt="Hand-decorated taper candles from the Moum concept brand">
+   <div class="card"><b>500 → 6,000</b><span>Instagram followers in one month during my internship at Workshack.co</span></div>
+  </div>
+  <div>
+   <h2>About me</h2>
+   <p>I studied business (BBA, NUST, 2021–2025) and now run email and social projects from start to finish. I plan the campaign, write the copy, talk to the client, and fix things when a campaign or landing page breaks.</p>
+   <ul>
+    <li>Worked directly with a UK-based client on an ongoing basis.</li>
+    <li>Runs several projects at once without dropping any of them.</li>
+   </ul>
+  </div>
+ </div>
+</section>
+
+<section id="work">
+ <div class="wrap">
+  <h2>Latest work</h2>
+  <div class="cards">
+   <a class="work" href="#moum">
+    <div class="ph"><img src="images/moum-baby-shower.jpg" alt="Baby shower taper candles from Moum" loading="lazy"><span class="go" aria-hidden="true">↗</span></div>
+    <h3>Moum</h3>
+    <p>A candle brand I made up to practice branding and email. I designed the logo, the post graphics and a Mailchimp landing page with a pre-order offer and a subscribe form.</p>
+    <span class="pill">Email</span><span class="pill">Branding</span><span class="pill">Concept brand</span>
+   </a>
+   <a class="work" href="#experience">
+    <div class="ph"><img src="images/readloom-grid.jpg" alt="Readloompk Instagram feed with designed posts" loading="lazy"><span class="go" aria-hidden="true">↗</span></div>
+    <h3>Readloompk</h3>
+    <p>Marketing for a book platform I ran as my final year project: post design, content planning and posting schedules. 1.6K Instagram views in 30 days.</p>
+    <span class="pill">Social</span><span class="pill">Content</span><span class="pill">Final year project</span>
+   </a>
+   <a class="work" href="#jewel-haven">
+    <div class="ph"><img src="images/jh-landing-4.jpg" alt="The Jewel Haven landing page with a shell dish of gold earrings and a subscribe button" loading="lazy"><span class="go" aria-hidden="true">↗</span></div>
+    <h3>The Jewel Haven</h3>
+    <p>Email marketing in Mailchimp: segmentation, copywriting, scheduling and landing page fixes. A practice brand I built to work on real campaigns.</p>
+    <span class="pill">Email</span><span class="pill">Mailchimp</span><span class="pill">Independent project</span>
+   </a>
+   <a class="work" href="#contact">
+    <div class="ph logo-tile"><img src="images/ddc-logo.png" alt="DDC Solutions logo" loading="lazy"><span class="go" aria-hidden="true">↗</span></div>
+    <h3>DDC Solutions</h3>
+    <p>LinkedIn content strategy for a UK-based client, with regular planning, scheduling and revisions.</p>
+    <span class="pill">LinkedIn</span><span class="pill">Strategy</span><span class="pill">Client work</span>
+   </a>
+  </div>
+ </div>
+</section>
+
+<section id="moum">
+ <div class="wrap">
+  <div class="moum-head">
+   <img src="images/moum-logo.png" alt="Moum logo: a melting candle next to the Urdu word for wax">
+   <div><h2>Moum</h2><p>A concept candle brand (موم means wax in Urdu). I made it to practice branding, post design and email: taper candles in birthday, baby shower and fall collections, with a matching Mailchimp landing page.</p><!-- ADD: link to the Mailchimp landing page --></div>
+  </div>
+  <div class="gallery">
+   <img src="images/moum-pink-or-blue.jpg" alt="Moum post: Pink or blue? with illustrated candles" loading="lazy">
+   <img src="images/moum-baby-shower.jpg" alt="Pink and blue baby shower taper candles" loading="lazy">
+   <img src="images/moum-fall-1.jpg" alt="Fall taper candles with maple leaves" loading="lazy">
+   <img src="images/moum-sprinkles.jpg" alt="Birthday taper candles with colourful wax drips and sprinkles" loading="lazy">
+   <img src="images/moum-fall-2.jpg" alt="Cherry and bow taper candles" loading="lazy">
+   <img src="images/moum-fall-3.jpg" alt="Pumpkin and vine taper candles" loading="lazy">
+  </div>
+  <p class="note">Moum is not a real shop. The product images are AI-generated.</p>
+  <div class="pair">
+   <img src="images/moum-welcome-email.jpg" alt="Moum welcome email with logo, short intro, 5% off first pre-order and a Pre-order now button" loading="lazy">
+   <div><h3>Welcome email</h3><p>The first email a new subscriber gets. It introduces the brand in a few lines, says what to expect, and gives 5% off their first pre-order, with one button to act on it.</p></div>
+  </div>
+ </div>
+</section>
+
+<section id="jewel-haven">
+ <div class="wrap">
+  <h2>The Jewel Haven</h2>
+  <p style="margin-bottom:40px">A practice jewelry brand I use to work on real email campaigns. This is its Mailchimp landing page: a 10% off first-order offer to collect subscribers, featured collections (waterproof, chunky gold, gold vs silver), and a subscribe button.</p>
+  <!-- ADD: link to the live landing page, e.g. <a class="call" href="URL" target="_blank" rel="noopener">View landing page ↗</a> -->
+  <div class="gallery two">
+   <img src="images/jh-landing-1.jpg" alt="Landing page top: Picks we think you'll love, subscribe for 10% off" loading="lazy">
+   <img src="images/jh-landing-2.jpg" alt="Landing page sections: the waterproof collection and chunky gold cuffs" loading="lazy">
+   <img src="images/jh-landing-3.jpg" alt="Landing page section: Gold vs Silver" loading="lazy">
+   <img src="images/jh-landing-4.jpg" alt="Landing page footer section: Let's grow together with a subscribe button" loading="lazy">
+  </div>
+  <p class="note">The Jewel Haven is a practice brand, not a client.</p>
+ </div>
+</section>
+
+<section id="services">
+ <div class="wrap">
+  <h2>What I do</h2>
+  <div class="rows">
+   <div class="row"><h3>Email campaigns</h3><p>Strategy and copy for newsletters, promotions and customer emails.</p><div><span class="pill">Email</span><span class="pill">Copywriting</span></div></div>
+   <div class="row"><h3>Lists and scheduling</h3><p>Splitting audiences into segments and scheduling sends in Mailchimp.</p><div><span class="pill">Mailchimp</span><span class="pill">Segmentation</span></div></div>
+   <div class="row"><h3>Social media</h3><p>Content planning, posting schedules and day-to-day community replies.</p><div><span class="pill">Instagram</span><span class="pill">Content</span></div></div>
+   <div class="row"><h3>LinkedIn content</h3><p>A posting plan and drafts for brands that want to show up on LinkedIn.</p><div><span class="pill">LinkedIn</span><span class="pill">Strategy</span></div></div>
+  </div>
+ </div>
+</section>
+
+<section id="experience">
+ <div class="wrap">
+  <h2>Where I’ve worked</h2>
+  <details>
+   <summary><div><h3>Social Media Executive</h3><small>DDC Solutions</small></div><p>2024–2025. Coordinated with a UK-based client and ran several content projects at once.</p><div><span class="pill">LinkedIn</span><span class="pill">Social</span></div></summary>
+   <ul><li>Worked with a UK-based client on a regular basis.</li><li>Managed multiple content projects: planning, scheduling and revisions.</li><li>Built and ran a LinkedIn content strategy.</li></ul>
+  </details>
+  <details>
+   <summary><div><h3>Email Marketing &amp; Campaign Coordinator</h3><small>The Jewel Haven (independent project)</small></div><p>2025–2026. Ran Mailchimp from setup to send.</p><div><span class="pill">Email</span><span class="pill">Mailchimp</span></div></summary>
+   <ul><li>Handled Mailchimp operations end to end.</li><li>Wrote marketing and customer emails.</li><li>Found and fixed recurring landing page and delivery issues.</li></ul>
+  </details>
+  <details>
+   <summary><div><h3>Marketing Manager</h3><small>Readloompk (final year project)</small></div><p>2024–2025. Design, content planning and posting schedules.</p><div><span class="pill">Social</span><span class="pill">Design</span></div></summary>
+   <ul><li>Planned content and managed the posting schedule.</li><li>Instagram reached 1.6K views and 96 interactions over 30 days, with 11 pieces of content shared.</li></ul>
+   <img src="images/readloom-insights.jpg" alt="Instagram insights for Readloompk: 1.6K views and 96 interactions from April 18 to May 17" loading="lazy">
+  </details>
+  <details>
+   <summary><div><h3>Marketing Intern</h3><small>Workshack.co (now Cove)</small></div><p>2023. Social and community engagement.</p><div><span class="pill">Instagram</span><span class="pill">Community</span></div></summary>
+   <ul><li>Handled daily social media and community engagement.</li><li>Grew Instagram from 500 to 6,000 followers in one month.</li></ul>
+  </details>
+  <details>
+   <summary><div><h3>Organizer</h3><small>NUST Business School</small></div><p>2022. Coordinated communication and guidance sessions.</p><div><span class="pill">Coordination</span></div></summary>
+   <ul><li>Coordinated sessions supporting intersex community representatives in launching independent e-commerce initiatives.</li></ul>
+  </details>
+ </div>
+</section>
+
+<section>
+ <div class="wrap three">
+  <div><h3>Skills</h3><p>Client communication</p><p>Professional email writing</p><p>Issue resolution</p><p>Mailchimp</p><p>Managing multiple projects</p><p>MS Office and presentations</p><p>Cross-cultural communication</p></div>
+  <div><h3>Certifications</h3><p>Email Marketing, HubSpot Academy</p><p>Foundations of Digital Marketing and E-commerce, Google</p></div>
+  <div><h3>Languages</h3><p>English, full professional</p><p>Urdu, native</p></div>
+ </div>
+</section>
+
+<section id="contact">
+ <div class="wrap">
+  <div class="cta">
+   <p>Got a project?</p>
+   <h2>Let’s talk about your emails.</h2>
+   <p>Send me a short note about your brand and what you need. I’ll reply with questions or a plan.</p>
+   <a class="btn" href="mailto:faatimazubair@outlook.com">Email me</a>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="wrap">
+  <span>© <span id="yr">2026</span> Fatima Zubair · Gujranwala, Pakistan</span>
+  <span><a href="mailto:faatimazubair@outlook.com">faatimazubair@outlook.com</a> · <a href="https://www.linkedin.com/in/-fatima-zubair-/" rel="noopener">LinkedIn</a></span>
+ </div>
+</footer>
+<script>document.getElementById("yr").textContent=new Date().getFullYear();</script>
+</body>
+</html>
